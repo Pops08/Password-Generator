@@ -31,7 +31,7 @@ function generatePassword() {
   var passLength = window.prompt("Please Enter A Number Between 8 - 128 For Your Password");
   passLength = parseInt(passLength);
 
-  while (passLength < 8 || passLength > 128){
+  while (passLength < 8 || passLength > 128) {
     window.alert("The Number You Have Selected Is NOT Within The Range");
     var passLength = window.prompt("Please Enter A Number Between 8 - 128 For Your Password");
     passLength = parseInt(passLength);
@@ -51,8 +51,6 @@ function generatePassword() {
 
   for (var [key, value] of Object.entries(inputMap)) {
 
-    debugger;
-
     if (passUpper) {
       password += Upper;
       passUpper = '';
@@ -68,8 +66,6 @@ function generatePassword() {
     }
 
   }
-
-  console.log("Password: " + password);
 
   while (increment < passLength) {
     finalPass += password[Math.floor(Math.random() * password.length)];
