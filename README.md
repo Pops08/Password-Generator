@@ -2,7 +2,7 @@
 
 Direct Link:
 ======
-https://pops08.github.io/Joshua-H-Password-Generator/
+https://pops08.github.io/Password-Generator/
 
 Author:
 ======
