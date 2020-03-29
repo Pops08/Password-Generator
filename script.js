@@ -1,7 +1,7 @@
 // Assignment code here
 var increment = 0;
 
-var Upper = "ABCDEFGHIJKLMNOP";
+var Upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var Lower = Upper.toLowerCase();
 var Special = "'!@#$%^&*()']";
 var Numbers = "0123456789";
@@ -42,14 +42,14 @@ function generatePassword() {
   var passLower = window.confirm("Include Lower Case?");
   var passNumber = window.confirm("Include Numbers?");
 
-  const object = {
+  const inputMap = {
     passUpper: Upper,
     passSpecial: Special,
     passLower: Lower,
     passNumber: Numbers
   };
 
-  for (var [key, value] of Object.entries(object)) {
+  for (var [key, value] of Object.entries(inputMap)) {
 
     debugger;
 
