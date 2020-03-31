@@ -67,6 +67,8 @@ function generatePassword() {
 
   }
 
+  increment = 0;
+  finalPass = '';
   while (increment < passLength) {
     finalPass += password[Math.floor(Math.random() * password.length)];
     increment++;
